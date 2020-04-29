@@ -40,7 +40,7 @@ L Connector:Conn_01x02_Male J1
 U 1 1 5EA180AB
 P 800 1000
 F 0 "J1" H 908 1181 50  0000 C CNN
-F 1 "Conn_01x02_Male" H 908 1090 50  0000 C CNN
+F 1 "Vin" H 908 1090 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 800 1000 50  0001 C CNN
 F 3 "~" H 800 1000 50  0001 C CNN
 	1    800  1000
@@ -263,7 +263,7 @@ F 3 "" H 4500 2500 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text GLabel 2500 1000 0    50   Input ~ 0
-HV
+FBK
 $Comp
 L Device:R R6
 U 1 1 5EA2B4CA
@@ -319,17 +319,6 @@ Wire Wire Line
 	6500 3500 6500 3400
 Wire Wire Line
 	6000 3400 6000 3500
-$Comp
-L Connector:Conn_01x02_Female J2
-U 1 1 5EA2E29A
-P 10700 1000
-F 0 "J2" H 10728 976 50  0000 L CNN
-F 1 "Conn_01x02_Female" H 10728 885 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10700 1000 50  0001 C CNN
-F 3 "~" H 10700 1000 50  0001 C CNN
-	1    10700 1000
-	1    0    0    -1  
-$EndComp
 Text GLabel 4500 1850 0    50   Input ~ 0
 ISEN
 Wire Wire Line
@@ -500,8 +489,8 @@ L Device:EMI_Filter_CommonMode FL1
 U 1 1 5EA43E68
 P 2250 5000
 F 0 "FL1" H 2250 4675 50  0000 C CNN
-F 1 "EMI_Filter_CommonMode" H 2250 4766 50  0000 C CNN
-F 2 "" H 2250 5040 50  0001 C CNN
+F 1 "CYSMB100805TL-4T-701R" H 2250 4766 50  0000 C CNN
+F 2 "Bamboulibs:CYSMB100805TL-4T-701R Common Mode Choke" H 2250 5040 50  0001 C CNN
 F 3 "~" H 2250 5040 50  0001 C CNN
 	1    2250 5000
 	-1   0    0    1   
@@ -534,21 +523,21 @@ F 3 "~" H 2250 6000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 2500 5500 2    50   Input ~ 0
-T_Prim_Hi
+T_Sec_Lo
 Text GLabel 2000 5500 0    50   Input ~ 0
-T_Prim_Lo
+T_Sec_Hi
 Wire Wire Line
 	2000 5500 2050 5500
 Wire Wire Line
 	2500 5500 2450 5500
 Text GLabel 2500 6500 2    50   Input ~ 0
-T_Sec_Hi
+T_Prim_Lo
 Wire Wire Line
 	2500 6500 2450 6500
 Wire Wire Line
 	2450 6500 2450 6400
 Text GLabel 2000 6500 0    50   Input ~ 0
-T_Sec_Lo
+T_Prim_Hi
 Wire Wire Line
 	2000 6500 2050 6500
 Wire Wire Line
@@ -562,8 +551,8 @@ L Device:EMI_Filter_CommonMode FL2
 U 1 1 5EA65625
 P 5250 5000
 F 0 "FL2" H 5250 4675 50  0000 C CNN
-F 1 "EMI_Filter_CommonMode" H 5250 4766 50  0000 C CNN
-F 2 "" H 5250 5040 50  0001 C CNN
+F 1 "FL2D-30-222" H 5250 4766 50  0000 C CNN
+F 2 "Bamboulibs:FL2D-30-222 Common Mode Choke" H 5250 5040 50  0001 C CNN
 F 3 "~" H 5250 5040 50  0001 C CNN
 	1    5250 5000
 	-1   0    0    1   
@@ -589,8 +578,8 @@ L Device:EMI_Filter_CommonMode FL3
 U 1 1 5EA68B8C
 P 8250 5000
 F 0 "FL3" H 8250 4675 50  0000 C CNN
-F 1 "EMI_Filter_CommonMode" H 8250 4766 50  0000 C CNN
-F 2 "" H 8250 5040 50  0001 C CNN
+F 1 "Dummy for future use" H 8250 4766 50  0000 C CNN
+F 2 "Bamboulibs:Transformer_dummy" H 8250 5040 50  0001 C CNN
 F 3 "~" H 8250 5040 50  0001 C CNN
 	1    8250 5000
 	-1   0    0    1   
@@ -611,4 +600,120 @@ Wire Wire Line
 	8050 5100 7500 5100
 Wire Wire Line
 	7500 4900 8050 4900
+Text GLabel 10000 900  0    50   Input ~ 0
+FBK
+$Comp
+L Connector:Conn_01x03_Male J2
+U 1 1 5EA5237E
+P 10700 1000
+F 0 "J2" H 10672 1024 50  0000 R CNN
+F 1 "Vout" H 10672 933 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10700 1000 50  0001 C CNN
+F 3 "~" H 10700 1000 50  0001 C CNN
+	1    10700 1000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 900  10500 900 
+Text GLabel 8000 3500 2    50   Input ~ 0
+T_Prim_Lo
+Text GLabel 9000 3500 0    50   Input ~ 0
+T_Sec_Lo
+Text GLabel 8000 3000 2    50   Input ~ 0
+T_Prim_Hi
+Text GLabel 9000 3000 0    50   Input ~ 0
+T_Sec_Hi
+Wire Wire Line
+	8000 3500 7500 3500
+Wire Wire Line
+	7500 3500 7500 3250
+Wire Wire Line
+	7500 3000 7200 3000
+Wire Wire Line
+	9000 3000 9150 3000
+Wire Wire Line
+	9150 3000 9150 3250
+Wire Wire Line
+	9150 3250 7500 3250
+Connection ~ 7500 3250
+Wire Wire Line
+	7500 3250 7500 3000
+Text GLabel 10500 3500 2    50   Input ~ 0
+HV
+$Comp
+L Device:CP C6
+U 1 1 5EA614E6
+P 9500 3750
+F 0 "C6" H 9618 3796 50  0000 L CNN
+F 1 "1u" H 9618 3705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.0mm_W1.6mm_P2.50mm" H 9538 3600 50  0001 C CNN
+F 3 "~" H 9500 3750 50  0001 C CNN
+	1    9500 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D1
+U 1 1 5EA626E9
+P 10000 3500
+F 0 "D1" H 10000 3284 50  0000 C CNN
+F 1 "D_Schottky" H 10000 3375 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 10000 3500 50  0001 C CNN
+F 3 "~" H 10000 3500 50  0001 C CNN
+	1    10000 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 5EA62F64
+P 9500 4000
+F 0 "#PWR0115" H 9500 3750 50  0001 C CNN
+F 1 "GND" H 9505 3827 50  0000 C CNN
+F 2 "" H 9500 4000 50  0001 C CNN
+F 3 "" H 9500 4000 50  0001 C CNN
+	1    9500 4000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 4000 9500 3900
+Wire Wire Line
+	9500 3600 9500 3500
+Wire Wire Line
+	9500 3500 9000 3500
+Wire Wire Line
+	9500 3500 9850 3500
+Connection ~ 9500 3500
+Wire Wire Line
+	10150 3500 10500 3500
+$Comp
+L power:VCC #PWR0116
+U 1 1 5EA6C9CF
+P 7800 3000
+F 0 "#PWR0116" H 7800 2850 50  0001 C CNN
+F 1 "VCC" V 7817 3128 50  0000 L CNN
+F 2 "" H 7800 3000 50  0001 C CNN
+F 3 "" H 7800 3000 50  0001 C CNN
+	1    7800 3000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7800 3000 8000 3000
+Text GLabel 8750 900  0    50   Input ~ 0
+FBK
+Text GLabel 9250 900  2    50   Input ~ 0
+HV
+$Comp
+L Device:Fuse F?
+U 1 1 5EACCE07
+P 9000 900
+F 0 "F?" V 8803 900 50  0000 C CNN
+F 1 "Cut to enable external feedback" V 8894 900 50  0000 C CNN
+F 2 "" V 8930 900 50  0001 C CNN
+F 3 "~" H 9000 900 50  0001 C CNN
+	1    9000 900 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8850 900  8750 900 
+Wire Wire Line
+	9150 900  9250 900 
 $EndSCHEMATC

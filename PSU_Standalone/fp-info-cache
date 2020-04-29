@@ -1,4 +1,4 @@
-17126633821546388
+17139342047716045
 Bamboulibs
 02x02MilMax0633-0-15-15-15-27-10-0
 Mounting Hole 2.5mm
@@ -69,6 +69,13 @@ BKA30D-R5 (BK30D-R5)
 0
 0
 0
+Bamboulibs
+BKA30D-R5withPads
+
+
+0
+12
+8
 Bamboulibs
 BME280
 
@@ -161,6 +168,20 @@ Cardino_D13_WithRing_F.Cu
 0
 0
 Bamboulibs
+Cardino_DinoSkin_F_SilkS
+
+
+0
+0
+0
+Bamboulibs
+Cardino_QR_F.Cu
+
+
+0
+0
+0
+Bamboulibs
 Cardino_Reset_B.SilkS
 
 
@@ -195,6 +216,13 @@ Carduino_pinouts_F.Cu
 0
 0
 0
+Bamboulibs
+Cut_trace
+Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator
+resistor
+0
+2
+2
 Bamboulibs
 D1_mini_board
 
@@ -378,6 +406,13 @@ MouseBite_X3
 0
 0
 Bamboulibs
+MousebiteX1
+
+
+0
+1
+1
+Bamboulibs
 NH35_Dial
 
 
@@ -511,6 +546,13 @@ Solder Bridge 3 Way 0805
 3
 3
 Bamboulibs
+Soluna_Character_F.Cu
+
+
+0
+0
+0
+Bamboulibs
 Soluna_DINOSKIN_B.SilkS
 
 
@@ -553,6 +595,13 @@ TS5215A
 4
 2
 Bamboulibs
+Tamagotchi_Dinoskin_B.SilkS
+
+
+0
+0
+0
+Bamboulibs
 TildeQR4
 
 
@@ -579,6 +628,13 @@ Transformer_LPR6235
 
 0
 12
+4
+Bamboulibs
+Transformer_dummy
+
+
+0
+4
 4
 Bamboulibs
 Tyrannopixelus_REX_B.SilkS
@@ -693,13 +749,6 @@ bearing-7mm
 14
 13
 Bamboulibs
-cardino_DinoSkin_F_SilkS
-
-
-0
-0
-0
-Bamboulibs
 dial
 
 
@@ -776,6 +825,13 @@ potsmd
 0
 3
 2
+Bamboulibs
+pyDino_F.Cu
+
+
+0
+0
+0
 Bamboulibs
 qiBoard
 
